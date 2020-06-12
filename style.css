@@ -31,8 +31,6 @@ p {
   align-items: center;
   justify-content: center;
   margin: auto;
-  height: 300px;
-  width: 300px;
   position: relative;
   transform: scale(1);
 }
@@ -108,17 +106,56 @@ p {
   }
 
   to {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 }
 
 .container-shrink {
   animation: shrink 4.5s linear forwards;
 }
+@media only screen and (max-width: 500px) {
+  .container-grow {
+    height: 100px;
+    width: 100px;
+    top: 50%;
+    left: 50%;
+    margin-left: -50%;
+    transform: translate(-50%, -50%);
+  }
+  .container-shrink {
+    height: 100px;
+    width: 100px;
+    top: 50%;
+    left: 50%;
+    margin-left: -50%;
+    transform: translate(-50%, -50%);
+  }
+  .pointer-container {
+    top: 10px;
+    left: 115px;
+    width: 20px;
+    height: 160px;
+  }
+
+  .circle {
+    height: 250px;
+    width: 250px;
+  }
+
+  .gradient-circle {
+    height: 270px;
+    width: 270px;
+  }
+
+  p {
+    font-size: 30px;
+    padding: 80px;
+  }
+}
 
 @keyframes shrink {
   from {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 
   to {
