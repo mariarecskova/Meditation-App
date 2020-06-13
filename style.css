@@ -106,7 +106,7 @@ p {
   }
 
   to {
-    transform: scale(1.1);
+    transform: scale(1.15);
   }
 }
 
@@ -131,10 +131,7 @@ p {
     transform: translate(-50%, -50%);
   }
   .pointer-container {
-    top: 10px;
-    left: 1px;
-    width: 20px;
-    height: 160px;
+    display: none;
   }
 
   .circle {
@@ -155,7 +152,7 @@ p {
 
 @keyframes shrink {
   from {
-    transform: scale(1.1);
+    transform: scale(1.15);
   }
 
   to {
